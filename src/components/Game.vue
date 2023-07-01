@@ -13,8 +13,8 @@ export default {
 
     onMounted(() => {
       game = new Phaser.Game({
-        width: '100%',
-        height: '100%',
+        width: '80%',
+        height: '60%',
         type: Phaser.AUTO,
         parent: gameContainer.value,
         scene: {
@@ -22,6 +22,7 @@ export default {
             this.cameras.main.setBackgroundColor('#24252A');
           },
           create() {
+
             this.helloWorld = this.add.text(
                 this.cameras.main.centerX,
                 this.cameras.main.centerY,
